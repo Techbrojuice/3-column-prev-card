@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(0, 0%, 95%);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.wrapper{
+    max-width: 52rem;
+    margin: 0 auto;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 5rem;
+    /* border-top-left-radius: ;
+    border-top-right-radius: ;
+    border-bottom-left-radius: ;
+    border-bottom-right-radius: ; */
+
+}
+
+.sed{
+    background-color:hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    /* font-family: 'Big Shoulders Display', cursive; */
+}
+
+.suv{
+    background-color:hsl(184, 100%, 22%);
+    /* font-family: 'Big Shoulders Display', cursive; */
+    
+}
+
+.lux{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    /* font-family: 'Big Shoulders Display', cursive; */
+}
+
+.setag, .sutag, .lutag{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    /* padding: 2rem; */
+}
+
+.choose, .take, .cruise{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    /* padding: 2rem; */
+}
+
+.learn-btnone, .learn-btntwo, .learn-btnthree{
+    font-family: 'Lexend Deca', sans-serif;
+    /* padding: 2rem; */
+}
+
+.sed, .suv, .lux{
+    padding: 2rem;
+}
+
+.lux a, .suv a, .sed a{
+    background-color:hsl(0, 0%, 95%) ;
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 0.6rem 1.6rem;
+    margin-bottom: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    /* display: inline-block; */
+}
+
+.lux a{
+    color: hsl(179, 100%, 13%);
+}
+.suv a{
+    color: hsl(184, 100%, 22%); 
+}
+.sed a{
+    color: hsl(31, 77%, 52%);
+}
+
+.lux a:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+.suv a:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+.sed a:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 600px){
+    .content{
+    grid-template-columns: 1fr;
+    margin: 5rem 2rem;
+}
+.sed{
+    background-color:hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+
+.lux{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+}
+
